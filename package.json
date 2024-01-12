@@ -15,6 +15,9 @@
   "author": "Daisie Moua",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.2",
     "font-awesome": "^4.7.0",
