@@ -6,9 +6,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 // React FontAwesome
-import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-brands-svg-icons";
-import { Row, Col, Card } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-solid-svg-icons";
 
 // Footer function
 const Footer = () => (

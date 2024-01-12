@@ -47,6 +47,13 @@ body {
     font-family: var(--ft-secd);
 }
 
-spacing {
+.spacing {
     margin-top: 1.2rem;
+}
+
+.hero {
+    background-image: 'url("public/images/.png")';
+    background-size: cover;
+    background-position: center;
+    height: auto;
 }
