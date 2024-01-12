@@ -38,19 +38,19 @@ const Footer = () => (
         <Card.Body>
           <Card.Title>Get In Touch!</Card.Title>
           <Card.Text>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <br />
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/daisie-moua-6b8402221/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <br />
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.figma.com/files/user/1299515299305454755?fuid=1299515299305454755" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFigma} />
             </a>
             <br />
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:daisiemouaa@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
           </Card.Text>
