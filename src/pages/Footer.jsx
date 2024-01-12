@@ -7,12 +7,7 @@ import Row from "react-bootstrap/Row";
 
 // React FontAwesome
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faEnvelope,
-  faFigma,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-brands-svg-icons";
 import { Row, Col, Card } from "react-bootstrap";
 
 // Footer function
