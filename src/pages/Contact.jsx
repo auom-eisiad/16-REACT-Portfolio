@@ -10,15 +10,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // Contact function
 const Contact = () => {
-  // Validate the inputs if it's state is empty
+  // Validate the inputs if it's state is empty or false
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-  //   Using email regex to validate the user's input making sure it follows the traditional email format
+  // Using email regex to validate the user's input making sure it follows the traditional email format
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  //   If the submit button is clicked, it will check if all form fields have been filled correctly.
+  // If the submit button is clicked, it will check if all form fields have been filled correctly.
   // - Uses form.checkValidity() to ensure all fields meet HTML validation rules.
   // - Uses the emailRegex to validate the email format.
   // - Ensures the message field is not empty.
@@ -32,6 +33,9 @@ const Contact = () => {
     ) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      // If everything meets the requirements, display a success message
+      setSubmitted(true);
     }
 
     setValidated(true);
@@ -51,36 +55,45 @@ const Contact = () => {
     <Card className="mx-auto mt-5 mb-5" style={{ maxWidth: "600px" }}>
       <Card.Body>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-          <Form.Group controlId="validateEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="Email"
-              required
-              value={email}
-              onChange={handleEmailChange}
-            />
-            <Form.Control.Feedback type="invalid">
-              Please enter a valid email
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Form.Group className="mt-2" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message</Form.Label>
-            <Form.Control
-              placeholder="Message"
-              as="textarea"
-              rows={5}
-              required
-              value={message}
-              onChange={handleMessageChange}
-            />
-            <Form.Control.Feedback type="invalid">
-              Please enter a message
-            </Form.Control.Feedback>
-          </Form.Group>
-          <Button type="submit" className="mt-2">
-            <FontAwesomeIcon icon={faPaperPlane} className="mr-2" /> Submit
-          </Button>
+          {submitted ? (
+            <Alert variant="success">Message Sent!</Alert>
+          ) : (
+            <>
+              <Form.Group controlId="validateEmail">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  required
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a valid email
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group
+                className="mt-2"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Message</Form.Label>
+                <Form.Control
+                  placeholder="Message"
+                  as="textarea"
+                  rows={5}
+                  required
+                  value={message}
+                  onChange={handleMessageChange}
+                />
+                <Form.Control.Feedback type="invalid">
+                  Please enter a message
+                </Form.Control.Feedback>
+              </Form.Group>
+              <Button type="submit" className="mt-2">
+                <FontAwesomeIcon icon={faPaperPlane} className="mr-2" /> Submit
+              </Button>
+            </>
+          )}
         </Form>
       </Card.Body>
     </Card>
