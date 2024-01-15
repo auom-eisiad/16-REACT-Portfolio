@@ -45,6 +45,7 @@
 
 body {
     font-family: var(--ft-secd);
+    background: var(--teal);
 }
 
 .spacing {
@@ -52,7 +53,7 @@ body {
 }
 
 .hero {
-    background-image: 'url("public/images/.png")';
+    background-image: 'url("public/images/aboutpic.png")';
     background-size: cover;
     background-position: center;
     height: auto;

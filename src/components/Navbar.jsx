@@ -8,14 +8,6 @@ function Navbar() {
       <li className="nav-item">
         <Link
           to="/"
-          className={currentPage === "/" ? "nav-link active" : "nav-link"}
-        >
-          Home
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/About"
           className={currentPage === "/About" ? "nav-link active" : "nav-link"}
         >
           About
@@ -37,6 +29,16 @@ function Navbar() {
           }
         >
           Contact
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Resume"
+          className={
+            currentPage === "/Resume" ? "nav-link active" : "nav-link"
+          }
+        >
+          Resume
         </Link>
       </li>
     </ul>

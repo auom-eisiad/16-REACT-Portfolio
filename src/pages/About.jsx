@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 // React FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // About function
 const About = () => (
@@ -15,7 +15,7 @@ const About = () => (
       <Card>
         <Card.Body>
           <Card.Title>
-            Hi there! <FontAwesomeIcon icon={faFlower} />
+            Hi there! 
           </Card.Title>
           <Card.Text>
             I'm Daisie, a passionate full-stack developer dedicated to crafting

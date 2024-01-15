@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // React Bootstrap
 import Card from "react-bootstrap/Card";
@@ -90,7 +90,7 @@ const Contact = () => {
                 </Form.Control.Feedback>
               </Form.Group>
               <Button type="submit" className="mt-2">
-                <FontAwesomeIcon icon={faPaperPlane} className="mr-2" /> Submit
+                Submit
               </Button>
             </>
           )}

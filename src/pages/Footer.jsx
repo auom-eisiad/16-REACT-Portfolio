@@ -6,8 +6,8 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 // React FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-solid-svg-icons";
 
 // Footer function
 const Footer = () => (
@@ -32,7 +32,7 @@ const Footer = () => (
         <Card.Body>
           <Card.Title>Get In Touch!</Card.Title>
           <Card.Text>
-            <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <br />
@@ -46,7 +46,7 @@ const Footer = () => (
             <br />
             <a href="mailto:daisiemouaa@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+            </a> */}
           </Card.Text>
         </Card.Body>
       </Card>
