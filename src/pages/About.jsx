@@ -15,7 +15,7 @@ const About = () => (
         <Card.Title className="about-title">Hi there! &#10022;</Card.Title>
         <Card.Text>
           I'm Daisie, a passionate full-stack developer dedicated to crafting
-          user-friendly and accessible applications. Each day I learn something
+          user-friendly and accessible applications. Each day, I learn something
           new and I strive for improvement. Whether working independently
           or collaboratively in a team, I bring enthusiasm and expertise to
           every project. I look forward to creating something amazing together!

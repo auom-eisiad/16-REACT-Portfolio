@@ -80,7 +80,7 @@ a {
   font-size: 3rem;
   padding: 7rem;
   margin: 0 20rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .about-title {
@@ -134,7 +134,7 @@ a {
 
 .project {
   flex: 1;
-  margin-bottom: 5rem; 
+  margin-bottom: 5rem;
   font-size: 1.2rem;
   color: rgb(223, 223, 223);
 }
@@ -180,8 +180,14 @@ a {
   border-radius: 0.7rem;
 }
 
-.spacing {
-  margin-top: 1.2rem;
+/* ERROR STYLING */
+#error-page {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  font-size: 3rem;
 }
 
 /* FOOTER STYLING */
@@ -190,4 +196,8 @@ a {
   color: var(--light);
   font-size: 1.5rem;
   padding: 7rem;
+}
+
+.spacing {
+  margin-top: 1.2rem;
 }
