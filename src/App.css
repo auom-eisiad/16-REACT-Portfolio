@@ -153,7 +153,8 @@ a {
 .contact-form {
   font-size: 3rem;
   padding: 7rem;
-  margin: 0 20rem;
+  margin: 0 40rem;
+  font-weight: 700;
 }
 
 .email-form,
