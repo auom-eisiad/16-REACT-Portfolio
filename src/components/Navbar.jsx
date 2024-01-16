@@ -31,7 +31,7 @@ const Navbar = () => {
           Contact
         </Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link
           to="/Resume"
           className={
@@ -40,7 +40,7 @@ const Navbar = () => {
         >
           Resume
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 }
