@@ -9,46 +9,57 @@ import Row from "react-bootstrap/Row";
 const Project = () => {
   const cardsContent = [
     {
-      title: "Card 1 Title",
-      text: "This is the content for Card 1.",
-      imageUrl: "https://example.com/image1.jpg",
-      date: "Date 1",
+      title: "Movie Reels",
+      text: "Collaberative project building a movie watchlist website",
+      imageUrl: "/images/movie-reels.png",
+      linkUrl: 'https://auom-eisiad.github.io/Movie-Reels/moviereels.html',
+      date: "August 28, 2023",
     },
     {
-      title: "Card 2 Title",
-      text: "This is the content for Card 2.",
-      imageUrl: "https://example.com/image2.jpg",
-      date: "Date 2",
+      title: "Lyrx",
+      text: "Collabertive project building lyrics to their favorite song",
+      imageUrl: "/images/lyrx.png",
+      linkUrl: 'https://lyrx-8c8792a2e8e6.herokuapp.com/',
+      date: "October 26, 2023",
     },
     {
-      title: "Card 3 Title",
-      text: "This is the content for Card 3.",
-      imageUrl: "https://example.com/image3.jpg",
-      date: "Date 3",
+      title: "5-day Weather Forecast",
+      text: "A weather dashboard that displays today's weather and the next 5 days",
+      imageUrl: "/images/weather-forecast.jpg",
+      linkUrl: 'https://auom-eisiad.github.io/06-Weather-Forecast/',
+      date: "August 24, 2023",
     },
     {
-      title: "Card 4 Title",
-      text: "This is the content for Card 4.",
-      imageUrl: "https://example.com/image4.jpg",
+      title: "Code Quiz",
+      text: "A mini quiz to test your coding knowledge",
+      imageUrl: "/images/code-quiz.png",
+      linkUrl: 'https://auom-eisiad.github.io/04-Code-Quiz/',
+      date: "August 10, 2023",
     },
     {
-      title: "Card 5 Title",
-      text: "This is the content for Card 5.",
-      imageUrl: "https://example.com/image4.jpg",
+      title: "README Generator",
+      text: "A professional README file generator",
+      imageUrl: "/images/readme-generator.png",
+      linkUrl: 'https://github.com/auom-eisiad/07-README-Generator',
+      date: "October 25, 2023",
     },
     {
-      title: "Card 6 Title",
-      text: "This is the content for Card 6.",
-      imageUrl: "https://example.com/image4.jpg",
+      title: "Work Scheduler",
+      text: "A to-do list for a 9-5 work schedule",
+      imageUrl: "/images/workday-scheduler.png",
+      linkUrl: 'https://auom-eisiad.github.io/05-Work-Schedule/',
+      date: "August 18, 2023",
     },
   ];
 
   return (
     <Row xs={1} md={3} className="project-page g-3">
       {cardsContent.map((card, idx) => (
-        <Col key={idx}>
+        <Col className="procol" key={idx}>
           <Card className="project">
-            <Card.Img variant="top" src={card.imageUrl} />
+          <a href={card.linkUrl}>
+            <Card.Img src={card.imageUrl} style={{ width: '30%'}} />
+            </a>
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
               <Card.Text>{card.text}</Card.Text>

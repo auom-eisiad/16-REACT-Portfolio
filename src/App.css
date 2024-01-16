@@ -93,10 +93,18 @@ a {
   flex-direction: row;
 }
 
+.procol {
+  margin: 0!important;
+  display: flex!important;
+  flex-wrap: wrap!important;
+  flex-direction: column!important;
+}
+
 .project {
   font-size: 1.5rem;
-  padding: 7rem;
+  padding: 2rem;
   margin: 0 20rem;
+  border: 0;
 }
 
 /* CONTACT STYLING */
