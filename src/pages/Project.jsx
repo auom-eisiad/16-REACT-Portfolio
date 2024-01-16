@@ -44,10 +44,10 @@ const Project = () => {
   ];
 
   return (
-    <Row xs={1} md={3} className="g-3">
+    <Row xs={1} md={3} className="project-page g-3">
       {cardsContent.map((card, idx) => (
         <Col key={idx}>
-          <Card>
+          <Card className="project">
             <Card.Img variant="top" src={card.imageUrl} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>
