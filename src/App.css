@@ -47,7 +47,7 @@ body {
   font-family: var(--ft-secd);
   font-size: 1.5rem;
   /* background: var(--light); */
-  background-image: url(/public/images/photo-1485470733090-0aae1788d5af.avif);
+  background-image: url(/images/photo-1485470733090-0aae1788d5af.avif);
   min-height: 100vh;
 }
 
