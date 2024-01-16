@@ -58,10 +58,10 @@ const Project = () => {
         <Col className="procol" key={idx}>
           <Card className="project">
           <a href={card.linkUrl}>
-            <Card.Img src={card.imageUrl} style={{ width: '30%'}} />
+            <Card.Img className="project-img" src={card.imageUrl} style={{ width: '30%'}} />
             </a>
             <Card.Body>
-              <Card.Title>{card.title}</Card.Title>
+              <Card.Title className="project-title">{card.title}</Card.Title>
               <Card.Text>{card.text}</Card.Text>
             </Card.Body>
             <Card.Footer>

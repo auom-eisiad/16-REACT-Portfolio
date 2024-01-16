@@ -94,10 +94,10 @@ a {
 }
 
 .procol {
-  margin: 0!important;
-  display: flex!important;
-  flex-wrap: wrap!important;
-  flex-direction: column!important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: column !important;
 }
 
 .project {
@@ -105,6 +105,16 @@ a {
   padding: 2rem;
   margin: 0 20rem;
   border: 0;
+}
+
+.project-img:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.8; 
+}
+
+.project-title {
+  font-size: 2.3rem;
+  font-weight: 700;
 }
 
 /* CONTACT STYLING */
