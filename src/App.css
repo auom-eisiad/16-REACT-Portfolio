@@ -178,8 +178,9 @@ a {
 /* CONTACT STYLING */
 .contact-form {
   font-size: 3rem;
-  padding: 7rem;
-  margin: 0 40rem;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
   font-weight: 700;
 }
 
@@ -217,10 +218,8 @@ a {
 #error-page {
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
-  top: 30%;
-  left: 35%;
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* FOOTER STYLING */
@@ -230,6 +229,7 @@ a {
   font-size: 1.5rem;
   padding: 7rem;
   display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -237,14 +237,6 @@ a {
 .credit,
 .social {
   flex: 1;
-}
-
-.credit {
-  margin-right: 50rem;
-}
-
-.credit-text {
-  margin-left: 10rem;
 }
 
 .spacing {
@@ -266,10 +258,10 @@ a {
 .icon a {
   margin-right: 2rem;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .icon a:hover {
   transition: opacity 0.3s ease-in-out;
   opacity: 0.5;
-  cursor: pointer;
 }
