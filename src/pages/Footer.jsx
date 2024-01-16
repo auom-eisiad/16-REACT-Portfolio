@@ -6,8 +6,12 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 // React FontAwesome
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub, faLinkedin, faEnvelope, faFigma } from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab, far);
 
 // Footer function
 const Footer = () => (
@@ -31,21 +35,21 @@ const Footer = () => (
         <Card.Body>
           <Card.Title>Get In Touch!</Card.Title>
           <Card.Text>
-            {/* <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} />
+            <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={['fab', 'github']} />
             </a>
             <br />
             <a href="https://www.linkedin.com/in/daisie-moua-6b8402221/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon icon={['fab', 'linkedin']} />
             </a>
             <br />
             <a href="https://www.figma.com/files/user/1299515299305454755?fuid=1299515299305454755" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFigma} />
+              <FontAwesomeIcon icon={['fab', 'figma']} />
             </a>
             <br />
             <a href="mailto:daisiemouaa@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a> */}
+              <FontAwesomeIcon icon={['far', 'envelope']} />
+            </a>
           </Card.Text>
         </Card.Body>
       </Card>
