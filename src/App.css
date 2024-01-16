@@ -164,6 +164,7 @@ a {
   width: 170%;
   line-height: 3rem;
   font-size: 2rem;
+  border-radius: 0.5rem;
 }
 
 .message {
@@ -196,8 +197,46 @@ a {
   color: var(--light);
   font-size: 1.5rem;
   padding: 7rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credit,
+.social {
+  flex: 1;
+}
+
+.credit {
+  margin-right: 50rem;
+}
+
+.credit-text {
+  margin-left: 10rem;
 }
 
 .spacing {
-  margin-top: 1.2rem;
+  padding-top: 3rem;
+}
+
+.social-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon a {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.icon a:hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
 }

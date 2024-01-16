@@ -16,9 +16,9 @@ library.add(fab, far);
 // Footer function
 const Footer = () => (
   <Row xs={1} md={2} className="footer-page g-5">
-    <Col>
+    <Col className="credit">
       <Card>
-        <Card.Body>
+        <Card.Body className="credit-text">
           <Card.Text>
             Thank you for checking out my work and look forward to more of my
             projects!
@@ -30,11 +30,11 @@ const Footer = () => (
         </Card.Body>
       </Card>
     </Col>
-    <Col>
+    <Col className="social">
       <Card>
         <Card.Body>
-          <Card.Title>Get In Touch!</Card.Title>
-          <Card.Text>
+          <Card.Title className="social-title">Get In Touch!</Card.Title>
+          <Card.Text className="icon">
             <a href="https://github.com/auom-eisiad" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={['fab', 'github']} />
             </a>
