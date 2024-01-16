@@ -26,6 +26,62 @@ const About = () => (
           </Card.Text>
         </Card.Body>
       </Card>
+      <Card className="skills">
+        <Card.Body>
+          <Card.Title className="skill-title">Skills:</Card.Title>
+          <Card.Text>
+            <ul className="skill-set">
+              <li>
+                HTML, CSS, JS
+              </li>
+              <li>
+                MySql
+              </li>
+              <li>
+                MongoDB
+              </li>
+              <li>
+                React.js
+              </li>
+              <li>
+                Bootstrap
+              </li>
+              <li>
+                jQuery
+              </li>
+              <li>
+                Express.js
+              </li>
+              <li>
+                Sequelize.js
+              </li>
+              <li>
+                Mongoose.js
+              </li>
+              <li>
+                MERN
+              </li>
+              <li>
+              Object-Oriented-Programming (OOP)
+              </li>
+              <li>
+              Application Programming Interfaces (API)
+              </li>
+              <li>
+              Command Line Interfaces (CLI)
+              </li>
+              <li>
+              Progressive Web Applications (PWA)
+              </li>
+              <li>
+              Functional-Programming (FP)
+              </li>
+              <li>
+                Git
+              </li>
+            </ul></Card.Text>
+        </Card.Body>
+      </Card>
   </CardGroup>
 );
 

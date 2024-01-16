@@ -86,6 +86,24 @@ a {
   margin-bottom: 1rem;
 }
 
+.skills {
+  font-size: 1.6rem;
+  padding: 7rem;
+  margin: 0 20rem;
+}
+
+.skill-title {
+  font-size: 3rem;
+}
+
+.skill-set {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* PROJECT STYLING */
 .project-page {
   display: flex;
