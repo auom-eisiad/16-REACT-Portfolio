@@ -15,7 +15,6 @@ const Footer = () => (
     <Col>
       <Card>
         <Card.Body>
-          <Card.Title>You made it!</Card.Title>
           <Card.Text>
             Thank you for checking out my work and look forward to more of my
             projects!
