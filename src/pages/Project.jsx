@@ -24,8 +24,8 @@ const Project = () => {
     },
     {
       title: "5-day Weather Forecast",
-      text: "A weather dashboard that displays today's weather and the next 5 days",
-      imageUrl: "/images/weather-forecast.jpg",
+      text: "Weather dashboard for today's weather and the next 5 days",
+      imageUrl: "/images/weather-forecast.png",
       linkUrl: 'https://auom-eisiad.github.io/06-Weather-Forecast/',
       date: "August 24, 2023",
     },
@@ -53,12 +53,12 @@ const Project = () => {
   ];
 
   return (
-    <Row xs={1} md={3} className="project-page g-3">
+    <Row className="project-page">
       {cardsContent.map((card, idx) => (
         <Col className="procol" key={idx}>
           <Card className="project">
           <a href={card.linkUrl}>
-            <Card.Img className="project-img" src={card.imageUrl} style={{ width: '30%'}} />
+            <Card.Img className="project-img" src={card.imageUrl} style={{ width: '80%'}} />
             </a>
             <Card.Body>
               <Card.Title className="project-title">{card.title}</Card.Title>
