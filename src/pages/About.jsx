@@ -2,19 +2,17 @@ import React from "react";
 
 // React Bootstrap
 import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import CardGroup from "react-bootstrap/CardGroup";
 
 // React FontAwesome
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // About function
 const About = () => (
-  <Row xs={1} md={2} className="g-2">
-    <Col>
-      <Card>
+  <CardGroup>
+      <Card className="about">
         <Card.Body>
-          <Card.Title>
+          <Card.Title className="about-title">
             Hi there! 
           </Card.Title>
           <Card.Text>
@@ -28,13 +26,7 @@ const About = () => (
           </Card.Text>
         </Card.Body>
       </Card>
-    </Col>
-    <Col>
-      <Card>
-        <div class="hero"></div>
-      </Card>
-    </Col>
-  </Row>
+  </CardGroup>
 );
 
 export default About;

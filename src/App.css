@@ -44,17 +44,53 @@
 }
 
 body {
-    font-family: var(--ft-secd);
-    background: var(--teal);
+  font-family: var(--ft-secd);
+  font-size: 1.5rem;
+  background: var(--teal);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* NAVBAR STYLING */
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #198754;
+}
+
+.nav-item {
+  list-style: none;
+  color: var(--white);
+  padding: 1rem 5rem;
+}
+
+.nav-item:hover {
+  transition: background-color 0.8s ease;
+  background-color: rgba(159, 209, 186, 0.8);
+}
+
+/* ABOUT PAGE STYLING */
+.about {
+  font-size: 3rem;
+  padding: 7rem;
+  margin: 0 20rem;
+}
+
+.about-title {
+  font-size: 7rem;
+  font-family: var(--ft-main);
+  margin-bottom: 1rem;
 }
 
 .spacing {
-    margin-top: 1.2rem;
+  margin-top: 1.2rem;
 }
 
-.hero {
-    background-image: 'url("public/images/aboutpic.png")';
-    background-size: cover;
-    background-position: center;
-    height: auto;
+/* FOOTER STYLING */
+.footer-page {
+  
 }

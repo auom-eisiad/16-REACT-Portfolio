@@ -11,7 +11,7 @@ import Row from "react-bootstrap/Row";
 
 // Footer function
 const Footer = () => (
-  <Row xs={1} md={2} className="g-5">
+  <Row xs={1} md={2} className="footer-page g-5">
     <Col>
       <Card>
         <Card.Body>
