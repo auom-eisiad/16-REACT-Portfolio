@@ -214,6 +214,13 @@ a {
   cursor: pointer;
 }
 
+/* RESUME STYLING */
+.resume {
+  margin: 20rem auto;
+  display: flex;
+  justify-content: center;
+}
+
 /* ERROR STYLING */
 #error-page {
   margin-left: auto;
